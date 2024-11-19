@@ -37,3 +37,7 @@ Example usage:
 ```
 
 Note: The `@Commit(Diff of Working State)` tag automatically captures your current working changes when using the command.
+
+### References
+
+- [dgokcin/dotfiles](https://github.com/dgokcin/dotfiles/tree/main)
