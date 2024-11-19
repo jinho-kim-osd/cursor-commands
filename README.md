@@ -6,17 +6,17 @@ A collection of custom commands for enhancing productivity with Cursor AI. This 
 
 This repository serves as a centralized location for Cursor AI custom commands, making it easier to maintain and share commonly used development workflows.
 
+## Installation
+
+1. Open Cursor AI
+2. Go to Settings -> Cursor Settings
+3. Navigate to Features -> Docs
+4. Click "+Add new doc"
+5. Enter the path to the command markdown file from this repository (e.g., `https://github.com/jinho-kim-osd/cursor-commands/blob/main/commands/create-commit.md`)
+
+![Cursor Settings](image.png)
+
 ## Commands
-
-### INPUT
-
-Note: This section ends with "# INPUT" because you should append your diff content using @Commit(Diff of Working State) tag after this marker when using the command.
-
-Example usage:
-
-```git
-@create-commit @Commit (Diff of Working State)
-```
 
 ### Available Commands
 
@@ -25,3 +25,15 @@ Example usage:
 ### Command Structure
 
 Each command is stored in the `/commands` directory with the following structure:
+
+### Usage
+
+To use a command, simply type the command name (e.g., `@create-commit`) followed by any required input.
+
+Example usage:
+
+```git
+@create-commit @Commit(Diff of Working State)
+```
+
+Note: The `@Commit(Diff of Working State)` tag automatically captures your current working changes when using the command.
